@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="user-navigation">
+      <ul class="user-navigation_list">
+          <li>
+           <img src="img/logo-pink.svg" width="110" height="20" alt="Логотип Pink">
+          </li>
+          <li class="user-navigation_item"><a href="index.html">Главная</a></li>
+          <li class="user-navigation_item"><a href="photo.html">Фотографии</a></li>
+          <li class="user-navigation_item"><a href="competition.html">Конкурс</a></li>
+          <li class="user-navigation_item"><a href="academy.html">Html academy</a></li>
+      </ul>
+      <h2 class="user-navigation_description">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <img src="http://placehold.it/150x100">
+    </header>
+    <section class="user">
+      <h2 class="visually-hidden">Данные участника</h2>
+      <h2 class="user_description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+      <form class="modal-user" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-user_contact">
+            <label for="input-name" id="label-name">Фамилия:</label>
+            <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Укажите фамилию*" aria-label="label-name">
+          </p>
+          <p class="modal-user_contact">
+            <label for="input-name" id="label-name">Имя:</label>
+            <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Введите ваше имя*" aria-label="label-name">
+          </p>
+          <p class="modal-user_contact">
+            <label for="input-name" id="label-name">Отчество:</label>
+            <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Ну и отчество тоже" aria-label="label-name">
+          </p>
+      <div class="user_progress">
+      <fieldset class="user_progress_info">
+        <legend class="user_description">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="user_list">
+          <li class="user_progress_item">
+            <input class="user_progress-checkbox visually-hidden" type="checkbox" id="1" name="selfie" value="1" checked>
+            <label for="1">Сделал селфи с акулой</label>
+          </li>
+          <li class="user_progress_item">
+            <input class="user_progress-checkbox visually-hidden"  type="checkbox" id="2" name="beach" value="2" checked>
+            <label for="2">Обгорел на пляже</label>
+          </li>
+          <li class="user_progress_item">
+            <input class="user_progresss-checkbox visually-hidden" type="checkbox" id="3" name="chak" value="3">
+            <label for="3">Видел Чака Норриса</label>
+          </li>
+          <li class="user_progress_item">
+            <input class="user_progress-checkbox visually-hidden" type="checkbox" id="4" name="surprise" value="4">
+            <label for="4">Накупил сувениров</label>
+          </li>
+          <li class="user_progress_item">
+            <input class="user_progress-checkbox visually-hidden" type="checkbox" id="5" name="tower" value="5" checked>
+            <label for="5">Удержал башню</label>
+          </li>
+          <li class="user_progress_item">
+            <input class="user_progress-checkbox visually-hidden" type="checkbox" id="6" name="hotel" value="6">
+            <label for="6">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      </div>
+      <p class="modal-user_contact">
+        <label for="input-mail">Номер телефона:</label>
+        <input type="email" id="input-mail" aria-label="label-mail" name="password" aria-required="true" placeholder="Номер,пожалуйста">
+      </p>
+      <p class="modal-user_contact">
+        <label for="input-mail">Адрес почты:</label>
+        <input type="email" id="input-mail" aria-label="label-mail" name="password" aria-required="true" placeholder="Введите почту*">
+      </p>
+      <div class="user_application">
+        <fieldset class="user_application_experience">
+          <legend class="user_application_user">С каким приложением путешествовали?</legend>
+          <ul class="user_application_list">
+            <li class="user_application_item">
+              <input class="application-radio visually-hidden" type="radio" id="ios" name="app" value="ios" checked>
+              <label for="ios">Pink для iOS</label>
+            </li>
+            <li class="user_application_item">
+              <input class="application-radio  visually-hidden" type="radio" id="android" name="app" value="android">
+              <label for="android">Pink на Android</label>
+            </li>
+            <li class="user_application_item">
+              <input class="application-radio  visually-hidden" type="radio" id="windows-phone" name="appr" value="windows-phone">
+              <label for="windows-phone">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+       </div>
+       <label for="input-text">Опишите свои эмоции</label>
+       <textarea name="input-text" id="input-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+       <button class="form-submit button" type="submit">Отправить</button>
+       <h3 class="user-notice">* — обязательные поля</h3>
+    </form>
+    <footer class="contacts-footer">
+      <a class="contacts-footer_logo" href="index.html">
+          <img src="img/logo-pink.svg" width="110" height="20" alt="Логотип Pink">
+      </a>
+      <ul class="contacts-social-list">
+        <li class="contacts-social_item"><a class="contacts-social" href="#"><img src="img/icon-twitter.svg" alt="Twitter" width="26" height="15"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="contacts-social_item"><a class="contacts-social" href="#"><img src="img/icon-fb.svg" alt="Facebook" width="12" height="22"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="contacts-social_item"><a class="contacts-social" href="#"><img src="img/icon-youtube.svg" alt="Youtube" width="21" height="21"><span class="visually-hidden">Youtube</span></a></li>
+      </ul>
+      <p class="contacts-footer_developed">Разработано-
+        <a class="developed" href="htmlacademy.ru">htmlacademy.ru</a>
+      </p>
+   </footer>
+  </body>
+</html>
