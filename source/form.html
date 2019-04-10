@@ -9,17 +9,17 @@
 <body>
   <header class="user-navigation">
     <ul class="user-navigation__list">
-      <li> <img src="img/logo-pink.svg" width="110" height="20" alt="Логотип Pink"> </li>
+      <li class="user-navigation__item"><a class="user-navigation__logo" href="index.html"> <img src="img/logo-pink.svg" width="110" height="20" alt="Логотип Pink"> </a></li>
       <li class="user-navigation__item"><a href="index.html">Главная</a></li>
       <li class="user-navigation__item"><a href="photo.html">Фотографии</a></li>
       <li class="user-navigation__item"><a href="competition.html">Конкурс</a></li>
       <li class="user-navigation__item"><a href="academy.html">Html academy</a></li>
     </ul>
     <h2 class="user-navigation__description">Конкурс на самое безбашенное путешествие с Пинк</h2> <img src="http://placehold.it/150x100"> </header>
-  <section class="user">
+  <section class="modal-user">
     <h2 class="visually-hidden">Данные участника</h2>
-    <h2 class="user__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
-    <form class="modal-user" action="https://echo.htmlacademy.ru" method="post">
+    <h2 class="modal-user__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+    <form class="modal-user__form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-user__contact">
         <label for="input-name" id="label-name">Фамилия:</label>
         <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Укажите фамилию*" aria-label="label-name"> </p>
@@ -29,32 +29,32 @@
       <p class="modal-user__contact">
         <label for="input-name" id="label-name">Отчество:</label>
         <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Ну и отчество тоже" aria-label="label-name"> </p>
-      <div class="user__progress">
-        <fieldset class="user__progress__info">
-          <legend class="user__description">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="user__list">
-            <li class="user__progress__item">
-              <input class="user__progress-checkbox visually-hidden" type="checkbox" id="1" name="selfie" value="1" checked>
+      <div class="user-progress">
+        <fieldset class="user-progress__info">
+          <legend class="user-progress__description">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="user-progress__list">
+            <li class="user-progress__item">
+              <input class="user-progress_checkbox visually-hidden" type="checkbox" id="1" name="selfie" value="1" checked>
               <label for="1">Сделал селфи с акулой</label>
             </li>
-            <li class="user__progress__item">
-              <input class="user__progress-checkbox visually-hidden" type="checkbox" id="2" name="beach" value="2" checked>
+            <li class="user-progress__item">
+              <input class="user-progress-checkbox visually-hidden" type="checkbox" id="2" name="beach" value="2" checked>
               <label for="2">Обгорел на пляже</label>
             </li>
-            <li class="user__progress__item">
-              <input class="user__progresss-checkbox visually-hidden" type="checkbox" id="3" name="chak" value="3">
+            <li class="user-progress__item">
+              <input class="user-progress_checkbox visually-hidden" type="checkbox" id="3" name="chak" value="3">
               <label for="3">Видел Чака Норриса</label>
             </li>
-            <li class="user__progress__item">
-              <input class="user__progress-checkbox visually-hidden" type="checkbox" id="4" name="surprise" value="4">
+            <li class="user-progress__item">
+              <input class="user-progress_checkbox visually-hidden" type="checkbox" id="4" name="surprise" value="4">
               <label for="4">Накупил сувениров</label>
             </li>
-            <li class="user__progress__item">
-              <input class="user__progress-checkbox visually-hidden" type="checkbox" id="5" name="tower" value="5" checked>
+            <li class="user-progress__item">
+              <input class="user-progress_checkbox visually-hidden" type="checkbox" id="5" name="tower" value="5" checked>
               <label for="5">Удержал башню</label>
             </li>
-            <li class="user__progress__item">
-              <input class="user__progress-checkbox visually-hidden" type="checkbox" id="6" name="hotel" value="6">
+            <li class="user-progress__item">
+              <input class="user-progress_checkbox visually-hidden" type="checkbox" id="6" name="hotel" value="6">
               <label for="6">Разгромил отель</label>
             </li>
           </ul>
@@ -66,20 +66,20 @@
       <p class="modal-user__contact">
         <label for="input-mail">Адрес почты:</label>
         <input type="email" id="input-mail" aria-label="label-mail" name="password" aria-required="true" placeholder="Введите почту*"> </p>
-      <div class="user__application">
-        <fieldset class="user__application__experience">
-          <legend class="user__application__user">С каким приложением путешествовали?</legend>
-          <ul class="user__application__list">
-            <li class="user__application__item">
-              <input class="application-radio visually-hidden" type="radio" id="ios" name="app" value="ios" checked>
+      <div class="user-application">
+        <fieldset class="user-application__experience">
+          <legend class="user-application__legend">С каким приложением путешествовали?</legend>
+          <ul class="user-application__list">
+            <li class="user-application__item">
+              <input class="user-application__radio visually-hidden" type="radio" id="ios" name="app" value="ios" checked>
               <label for="ios">Pink для iOS</label>
             </li>
-            <li class="user__application__item">
-              <input class="application-radio  visually-hidden" type="radio" id="android" name="app" value="android">
+            <li class="user-application__item">
+              <input class="user-application__radio visually-hidden" type="radio" id="android" name="app" value="android">
               <label for="android">Pink на Android</label>
             </li>
-            <li class="user__application__item">
-              <input class="application-radio  visually-hidden" type="radio" id="windows-phone" name="appr" value="windows-phone">
+            <li class="user-application__item">
+              <input class="user-application__radio visually-hidden" type="radio" id="windows-phone" name="appr" value="windows-phone">
               <label for="windows-phone">Windows Phone</label>
             </li>
           </ul>
@@ -91,15 +91,15 @@
       <h3 class="user-notice">* — обязательные поля</h3> </form>
     <footer class="contacts-footer">
       <a class="contacts-footer__logo" href="index.html"> <img src="img/logo-pink.svg" width="110" height="20" alt="Логотип Pink"> </a>
-      <ul class="contacts-social-list">
-        <li class="contacts-social__item">
-          <a class="contacts-social" href="#"><img src="img/icon-twitter.svg" alt="Twitter" width="26" height="15"><span class="visually-hidden">Twitter</span></a>
+      <ul class="contacts-footer__list">
+        <li class="contacts-footer__item">
+          <a class="contacts-footer__social" href="#"><img src="img/icon-twitter.svg" alt="Twitter" width="26" height="15"><span class="visually-hidden">Twitter</span></a>
         </li>
-        <li class="contacts-social__item">
-          <a class="contacts-social" href="#"><img src="img/icon-fb.svg" alt="Facebook" width="12" height="22"><span class="visually-hidden">Facebook</span></a>
+        <li class="contacts-footer__item">
+          <a class="contacts-footer__social" href="#"><img src="img/icon-fb.svg" alt="Facebook" width="12" height="22"><span class="visually-hidden">Facebook</span></a>
         </li>
-        <li class="contacts-social__item">
-          <a class="contacts-social" href="#"><img src="img/icon-youtube.svg" alt="Youtube" width="21" height="21"><span class="visually-hidden">Youtube</span></a>
+        <li class="contacts-footer__item">
+          <a class="contacts-footer__social" href="#"><img src="img/icon-youtube.svg" alt="Youtube" width="21" height="21"><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
       <p class="contacts-footer__developed">Разработано- <a class="developed" href="htmlacademy.ru">htmlacademy.ru</a> </p>
