@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Приложение Pink</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+<body>
+  <header class="user-navigation">
+    <ul class="user-navigation__list">
+      <li class="user-navigation__item"> <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink"> </li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="index.html">Главная</a></li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="photo.html">Фотографии</a></li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="competition.html">Конкурс</a></li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="academy.html">Html academy</a></li>
+    </ul>
+    <img class="user-navigation_background" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фон">
+    <h3 class="user-navigation_competition">Конкурс на самое безбашенное путешествие с Пинк</h3>
+ </header>
+  <section class="modal-user">
+    <h2 class="visually-hidden">Данные участника</h2>
+    <h2 class="modal-user__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+    <form class="modal-user__form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-user__contact">
+        <label for="input-name" id="label-name">Фамилия:</label>
+        <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Укажите фамилию*" aria-label="label-name"> </p>
+      <p class="modal-user__contact">
+        <label for="input-name" id="label-name">Имя:</label>
+        <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Введите ваше имя*" aria-label="label-name"> </p>
+      <p class="modal-user__contact">
+        <label for="input-name" id="label-name">Отчество:</label>
+        <input autocomplete="name" type="text" id="input-name" name="login" placeholder="Ну и отчество тоже" aria-label="label-name"> </p>
+      <div class="user-progress">
+        <fieldset class="user-progress__info">
+          <legend class="user-progress__description">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="user-progress__list">
+            <li class="user-progress__item">
+              <input class="user-progress__checkbox visually-hidden" type="checkbox" id="1" name="selfie" value="1" checked>
+              <label for="1">Сделал селфи с акулой</label>
+            </li>
+            <li class="user-progress__item">
+              <input class="user-progress__checkbox visually-hidden" type="checkbox" id="2" name="beach" value="2" checked>
+              <label for="2">Обгорел на пляже</label>
+            </li>
+            <li class="user-progress__item">
+              <input class="user-progress__checkbox visually-hidden" type="checkbox" id="3" name="chak" value="3">
+              <label for="3">Видел Чака Норриса</label>
+            </li>
+            <li class="user-progress__item">
+              <input class="user-progress__checkbox visually-hidden" type="checkbox" id="4" name="surprise" value="4">
+              <label for="4">Накупил сувениров</label>
+            </li>
+            <li class="user-progress__item">
+              <input class="user-progress__checkbox visually-hidden" type="checkbox" id="5" name="tower" value="5" checked>
+              <label for="5">Удержал башню</label>
+            </li>
+            <li class="user-progress__item">
+              <input class="user-progress__checkbox visually-hidden" type="checkbox" id="6" name="hotel" value="6">
+              <label for="6">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <p class="modal-user__contact">
+        <label for="input-mail">Номер телефона:</label>
+        <input type="email" id="input-mail" aria-label="label-mail" name="password" aria-required="true" placeholder="Номер,пожалуйста">
+      </p>
+      <p class="modal-user__contact">
+        <label for="input-mail">Адрес почты:</label>
+        <input type="email" id="input-mail" aria-label="label-mail" name="password" aria-required="true" placeholder="Введите почту*">
+      </p>
+      <div class="user-application">
+        <fieldset class="user-application__experience">
+          <legend class="user-application__legend">С каким приложением путешествовали?</legend>
+          <ul class="user-application__list">
+            <li class="user-application__item">
+              <input class="user-application__radio visually-hidden" type="radio" id="ios" name="app" value="ios" checked>
+              <label for="ios">Pink для iOS</label>
+            </li>
+            <li class="user-application__item">
+              <input class="user-application__radio visually-hidden" type="radio" id="android" name="app" value="android">
+              <label for="android">Pink на Android</label>
+            </li>
+            <li class="user-application__item">
+              <input class="user-application__radio visually-hidden" type="radio" id="windows-phone" name="appr" value="windows-phone">
+              <label for="windows-phone">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <label for="input-text">Опишите свои эмоции</label>
+      <textarea name="input-text" id="input-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <button class="form-submit button" type="submit">Отправить</button>
+      <h3 class="user-notice">* — обязательные поля</h3> </form>
+      <footer class="contacts-footer">
+        <a class="contacts-footer__logo" href="index.html">
+          <img class="contacts-footer__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
+        </a>
+        <ul class="contacts-footer__list">
+          <li class="contacts-footer__item">
+            <a class="contacts-footer__social" href="#">
+              <img src="img/icon-twitter.svg" alt="Twitter" width="26" height="15">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="contacts-footer__item">
+            <a class="contacts-footer__social" href="#">
+              <img src="img/icon-facebook.svg" alt="Facebook" width="12" height="22">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="contacts-footer__item">
+            <a class="contacts-footer__social" href="#">
+              <img src="img/icon-youtube.svg" alt="Youtube" width="21" height="21">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <p class="contacts-footer__developed">Разработано-
+          <a class="developed" href="htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="Html-academy" width="27" height="34">
+            <span class="visually-hidden">htmlacademy.ru</span>
+          </a>
+        </p>
+      </footer>
+    </body>
+
+</html>

@@ -2,11 +2,108 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Приложение Pink</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+<body>
+  <header class="user-navigation">
+    <ul class="user-navigation__list">
+      <li class="user-navigation__item"> <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink"> </li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="index.html">Главная</a></li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="photo.html">Фотографии</a></li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="competition.html">Конкурс</a></li>
+      <li class="user-navigation__item"><a class="user-navigation_href" href="academy.html">Html academy</a></li>
+    </ul>
+    <img class="user-navigation_background" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фон">
+    <img class="user-navigation_background--hand" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука с айфоном">
+ </header>
+  <section class="download-application">
+    <h2 class="visually-hidden">Установка приложения</h2>
+    <ul class="download-application__list">
+      <li class="download-application__item--load"><a class="download-application__href--load" href="#">Скачать приложение</a></li>
+      <li class="download-application__item"><a class="download-application__href" href="#"><img class="download-application__img" src="img/logo-android.svg" width="42" height="47" alt="Логотип Android"></a></li>
+      <li class="download-application__item"><a class="download-application__href" href="#"><img class="download-application__img" src="img/logo-apple.svg" width="42" height="47" alt="Логотип Apple"></a></li>
+      <li class="download-application__item"><a class="download-application__href" href="#"><img class="download-application__img" src="img/logo-microsoft.svg" width="42" height="47" alt="Логотип Microsoft"></a></li>
+    </ul>
+      <p class="download-application__description">Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8</p>
+  </section>
+  <section class="advantages-company">
+    <h2 class="visually-hidden">Преимущества компании</h2>
+    <h2 class="advantages-company__offer">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+    <ul class="advantages-company__list">
+      <li class="advantages-company__item">
+        <h3 class="advantages-company__title">Поднимает настроение</h3>
+        <p class="advantages-company__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </li>
+      <li class="advantages-company__item">
+        <h3 class="advantages-company__title">Меняет мир вокруг</h3>
+        <p class="advantages-company__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </li>
+      <li class="advantages-company__item">
+        <h3 class="advantages-company__title">Заводит новых друзей</h3>
+        <p class="advantages-company__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      </li>
+    </ul>
+    <img class="advantages-company__background" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Логотип телефона">
+  </section>
+  <section class="reviews-company">
+    <h2 class="visually-hidden">Отзывы пользователей</h2>
+    <ul class="reviews-company__list">
+      <li class="reviews-company__item--active" >
+        <h3 class="reviews-company__user">Николай Петров</h3>
+        <p class="reviews-company__reviews">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </li>
+      <li class="reviews-company__item">
+        <h3 class="reviews-company__user">Николай Петров</h3>
+        <p class="reviews-company__reviews">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </li>
+      <li class="reviews-company__item">
+        <h3 class="reviews-company__user">Николай Петров</h3>
+        <p class="reviews-company__reviews">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </li>
+    </ul>
+  </section>
+  <section class="tariff-plan">
+    <h2 class="visually-hidden">Тарифные планы</h2>
+    <ul class="tariff-plan__list">
+      <li class="tariff-plan__item-headline">
+        <h3 class="tariff-plan__user">База<span class="tariff-plan__user-price">1.99 USD</span></h3>
+      </li>
+      <li class="tariff-plan__item">Розовый фильтр</li>
+      <li class="tariff-plan__item">Смайлики</li>
+      <li class="tariff-plan__item">Комментарии</li>
+    </ul>
+    <ul class="tariff-plan__list">
+      <li class="tariff-plan__item-headline">
+        <h3 class="tariff-plan__user">Стандарт<span class="tariff-plan__user-price">3.99 USD</span></h3>
+      </li>
+      <li class="tariff-plan__item">Розовый фильтр</li>
+      <li class="tariff-plan__item">Смайлики</li>
+      <li class="tariff-plan__item">Комментарии</li>
+    </ul>
+    <ul class="tariff-plan__list">
+      <li class="tariff-plan__item-headline">
+        <h3 class="tariff-plan__user">Анлим<span class="tariff-plan__user-price">9.99 USD</span></h3>
+      </li>
+      <li class="tariff-plan__item">Розовый фильтр</li>
+      <li class="tariff-plan__item">Смайлики</li>
+      <li class="tariff-plan__item">Комментарии</li>
+    </ul>
+  </section>
+  <footer class="footer-index">
+    <section class="footer-index__contacts">
+      <h2 class="visually-hidden">Контакты компании</h2>
+      <p class="footer-index__description">Остались вопросы?Свяжитесь с нами!</p>
+      <p class="footer-index__feedback">Звоните: <a class="contacts-company__feedback item" href="#">+7 (812) 555-66-66</a></p>
+      <p class="footer-index__feedback">Пишите: <a class="contacts-company__feedback item" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+      <p class="footer-index__feedback">Приезжайте в гости: <span class="contacts-company__feedback item" href="#">ул. Большая Конюшенная, 19/8</span></p>
+    </section>
+    <div class="contact-map">
+      <a class="contact-map__google-map"href="https://goo.gl/maps/pJxZczZtuVA2"><img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8" height="158" width="300"></a>
+    </div>
+  </footer>
+</body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
 </html>
