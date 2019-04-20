@@ -7,6 +7,7 @@
   margin: 0 auto;
   text-align: center;
   font-size: 24px;
+  color: @bg-darkblue;
 }
 
 .advantages-company__list {
@@ -26,9 +27,25 @@
 .advantages-company__description {
   font-size: 14px;
   line-height: 24px;
-  color: #283645;
+  color: @bg-darkblue;
 }
 
 .advantages-company__background {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-company__offer {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 34px;
+  }
+
+  .advantages-company__list {
+    list-style: none;
+    background-image: url("/img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+  }
 }

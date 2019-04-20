@@ -1,5 +1,10 @@
 .user-navigation {
   background-color: #1d2632;
+  background-image: url("/img/iphone-hand-mobile@1x.png"), url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position:  bottom center, center;
+  min-height: 462px;
+  position: relative;
 }
 
 .user-navigation__list {
@@ -7,21 +12,19 @@
   margin: 0 auto;
 }
 
+.user-navigation__item:not(:first-child){
+  display: none;
+}
+
+.user-navigation__item:first-child::before {
+  content: url(../img/logo-pink-white-mobile.svg);
+}
+
 .user-navigation_href {
   color: #ffffff;
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-}
-
-.user-navigation_background {
-  position: relative;
-}
-
-.user-navigation_background--hand {
-  position: absolute;
-  top: 341px;
-  left: 14px;
 }
 
 .user-navigation_competition {
@@ -32,4 +35,72 @@
   left: 5px;
   font-weight: 200;
   text-align: center;
+}
+
+.user-navigation__headline {
+  color: rgba(255,255,255,0);
+  position: absolute;
+
+}
+
+@media (min-width: @tablet-width) {
+  .user-navigation {
+    background-color: #1d2632;
+    background-image: url("/img/iphone-hand-tablet@1x.png"), url("/img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position:  bottom center, center;
+    min-height: 729px;
+  }
+
+  .user-navigation__item:first-child::before {
+    content: url(../img/logo-pink-white-tablet.svg);
+  }
+
+  .user-navigation__list {
+   background-color: #11181e;
+   opacity: 0.7;
+  }
+
+  .user-navigation__headline{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    width: 185px;
+    line-height: 44px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-navigation {
+    background-color: #1d2632;
+    background-image: url("/img/iphone-hand-desktop@1x.png"), url("/img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position:  bottom center, center;
+    min-height: 853px;
+  }
+
+  .user-navigation__item:first-child::before {
+    content: url(../img/logo-pink-white-desktop.svg);
+  }
+
+  .user-navigation__list {
+   background-color: #11181e;
+   opacity: 0.7;
+  }
+
+  .user-navigation__headline{
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0;
+    width: 240px;
+    line-height: 44px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
 }
