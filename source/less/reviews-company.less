@@ -5,3 +5,41 @@
 .reviews-company__item {
   display: none;
 }
+
+.reviews-company__item--active{
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-company__data{
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews-company__user{
+    order: 2;
+  }
+
+  .reviews-company__data{
+    display: inline;
+    font-size: 14px;
+    line-height: 30px;
+    color:@bg-darkblue;
+
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+   .reviews-company__reviews{
+     font-size: 18px;
+     line-height: 30px;
+     color:@bg-darkblue;
+     width: 700px;
+     margin: 0 auto;
+   }
+
+  .reviews-company__user{
+    margin: 0 auto;
+  }
+}

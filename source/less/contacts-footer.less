@@ -17,3 +17,25 @@
   line-height: 18px;
   color: @bg-darkblue;
 }
+
+.contacts-footer{
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-footer{
+    display: flex;
+    }
+
+    .contacts-footer__list {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .contacts-footer__developed {
+    display: flex;
+    align-items: center;
+    margin-left: 108px;
+  }
+
+}
