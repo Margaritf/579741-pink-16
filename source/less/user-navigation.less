@@ -2,10 +2,10 @@
   background-color: #1d2632;
   background-image: url("/img/iphone-hand-mobile@1x.png"), url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position:  bottom center, center;
+  background-position: bottom center, center;
   position: relative;
   min-height: 497px;
-  width:100%;
+  width: 100%;
   margin: 0 auto;
   outline: 1px solid black;
 }
@@ -18,7 +18,7 @@
 }
 
 .user-navigation__item:first-child::before {
-  content: url(../img/logo-pink-white-mobile.svg);
+  content: url("../img/logo-pink-white-mobile.svg");
 }
 
 .user-navigation__item {
@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.user-navigation__href{
+.user-navigation__href {
   color: #ffffff;
 }
 
@@ -42,34 +42,32 @@
 }
 
 .user-navigation__headline {
-  color: rgba(255,255,255,0);
+  color: rgba(255, 255, 255, 0);
   position: absolute;
-
 }
 
 
 .user-navigation--form {
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position:  bottom center;
-
+  background-position: bottom center;
 }
 
 @media (min-width: @tablet-width) {
-.user-navigation {
-  background-color: #1d2632;
-  background-image: url("/img/bg-back-tablet@1x.jpg");
-  background-repeat: no-repeat;
-  background-position:  bottom center;
-  min-height: 696px;
-}
-
-  .user-navigation__item:first-child::before {
-    content: url(../img/logo-pink-white-tablet.svg);
+  .user-navigation {
+    background-color: #1d2632;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    min-height: 696px;
   }
 
-  .user-navigation__headline{
-    color: #fff;
+  .user-navigation__item:first-child::before {
+    content: url("../img/logo-pink-white-tablet.svg");
+  }
+
+  .user-navigation__headline {
+    color: #ffffff;
     font-size: 40px;
     font-weight: 400;
     margin: 0;
@@ -86,12 +84,12 @@
     background-color: #1d2632;
     background-image: url("/img/bg-back-desktop@1x.jpg"), url("/img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat, no-repeat;
-    background-position:  bottom center, center;
+    background-position: bottom center, center;
     position: relative;
   }
 
   .user-navigation__item:first-child::before {
-    content: url(../img/logo-pink-white-desktop.svg);
+    content: url("../img/logo-pink-white-desktop.svg");
   }
 
   .user-navigation__list {
@@ -99,8 +97,8 @@
     justify-content: space-around;
   }
 
-  .user-navigation__headline{
-    color: #fff;
+  .user-navigation__headline {
+    color: #ffffff;
     font-weight: 400;
     font-size: 50px;
     margin: 0;
