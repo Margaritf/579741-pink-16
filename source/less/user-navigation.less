@@ -15,6 +15,8 @@
   margin: 0 auto;
   background-color: #11181e;
   opacity: 0.7;
+  display: flex;
+  flex-direction: column;
 }
 
 .user-navigation__item:first-child::before {
@@ -34,11 +36,9 @@
 .user-navigation_competition {
   color: #ffffff;
   font-size: 24px;
-  position: absolute;
-  bottom: 127px;
-  left: 5px;
   font-weight: 200;
   text-align: center;
+  padding-top: 41px;
 }
 
 .user-navigation__headline {
@@ -47,7 +47,8 @@
 }
 
 
-.user-navigation--form {
+.user-navigation--form,
+.user-navigation--photo {
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -77,6 +78,15 @@
     padding-left: 50px;
     padding-top: 50px;
   }
+
+  .user-navigation_competition {
+    font-size: 50px;
+  }
+
+  .user-navigation__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -90,11 +100,6 @@
 
   .user-navigation__item:first-child::before {
     content: url("../img/logo-pink-white-desktop.svg");
-  }
-
-  .user-navigation__list {
-    display: flex;
-    justify-content: space-around;
   }
 
   .user-navigation__headline {
