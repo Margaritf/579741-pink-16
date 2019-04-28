@@ -1,0 +1,78 @@
+.footer-index {
+  margin: 0 auto;
+  outline: 1px solid black;
+  width: 100%;
+}
+
+.footer-index__contacts {
+  width: 244px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-index__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-index__description {
+  font-size: 24px;
+  color: @bg-darkblue;
+  margin: 0 auto;
+  line-height: 24px;
+}
+
+.footer-index__feedback {
+  font-size: 18px;
+  color: @bg-darkblue;
+}
+
+.contacts-company__feedback--item {
+  font-size: 24px;
+  color: #d22856;
+  text-decoration: underline;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-index__contacts {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 554px;
+  }
+
+  .footer-index__description {
+    font-size: 40px;
+    color: @bg-darkblue;
+    margin: 0 auto;
+    line-height: 40px;
+  }
+
+  .footer-index__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .contact-map__google-img {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-index__contacts {
+    width: 100%;
+  }
+
+  .footer-index__description {
+    width: 554px;
+  }
+
+  .footer-index__list {
+    width: 100%;
+  }
+}

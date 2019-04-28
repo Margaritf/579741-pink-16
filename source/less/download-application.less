@@ -1,13 +1,16 @@
 .download-application {
-  background-color: #1d2631;
+  background-color: rgba(29, 38, 49, 1);
   margin: 0 auto;
+  outline: 1px solid black;
+  width: 100%;
 }
 
 .download-application__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .download-application__href--load {
@@ -18,6 +21,7 @@
 
 .download-application__item--load {
   margin-right: 54px;
+  margin-top: 64px;
 }
 
 .download-application__description {
@@ -26,4 +30,22 @@
   color: #ffffff;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .download-application {
+    background-color: rgba(29, 38, 49, 0);
+    position: absolute;
+    top: 285px;
+    width: 320px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-application {
+    background-color: rgba(29, 38, 49, 0);
+    position: absolute;
+    top: 285px;
+    width: 307px;
+  }
 }

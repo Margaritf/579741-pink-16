@@ -1,35 +1,121 @@
 .user-navigation {
   background-color: #1d2632;
+  background-image: url("/img/iphone-hand-mobile@1x.png"), url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, center;
+  position: relative;
+  min-height: 497px;
+  width: 100%;
+  margin: 0 auto;
+  outline: 1px solid black;
 }
 
 .user-navigation__list {
   list-style: none;
   margin: 0 auto;
+  background-color: #11181e;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
 }
 
-.user-navigation_href {
-  color: #ffffff;
+.user-navigation__item:first-child::before {
+  content: url("../img/logo-pink-white-mobile.svg");
+}
+
+.user-navigation__item {
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
 }
 
-.user-navigation_background {
-  position: relative;
-}
-
-.user-navigation_background--hand {
-  position: absolute;
-  top: 341px;
-  left: 14px;
+.user-navigation__href {
+  color: #ffffff;
 }
 
 .user-navigation_competition {
   color: #ffffff;
   font-size: 24px;
-  position: absolute;
-  bottom: 127px;
-  left: 5px;
   font-weight: 200;
   text-align: center;
+  padding-top: 41px;
+}
+
+.user-navigation__headline {
+  color: rgba(255, 255, 255, 0);
+  position: absolute;
+}
+
+
+.user-navigation--form,
+.user-navigation--photo {
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+@media (min-width: @tablet-width) {
+  .user-navigation {
+    background-color: #1d2632;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    min-height: 696px;
+  }
+
+  .user-navigation__item:first-child::before {
+    content: url("../img/logo-pink-white-tablet.svg");
+  }
+
+  .user-navigation__headline {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    width: 185px;
+    line-height: 44px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .user-navigation_competition {
+    font-size: 50px;
+  }
+
+  .user-navigation__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-navigation {
+    background-color: #1d2632;
+    background-image: url("/img/bg-back-desktop@1x.jpg"), url("/img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center;
+    position: relative;
+  }
+
+  .user-navigation__item:first-child::before {
+    content: url("../img/logo-pink-white-desktop.svg");
+  }
+
+  .user-navigation__headline {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0;
+    width: 240px;
+    line-height: 44px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .user-navigation_competition {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }

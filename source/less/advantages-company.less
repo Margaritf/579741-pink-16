@@ -1,5 +1,8 @@
 .advantages-company {
   background-color: #ffffff;
+  margin: 0 auto;
+  outline: 1px solid black;
+  width: 100%;
 }
 
 .advantages-company__offer {
@@ -7,11 +10,20 @@
   margin: 0 auto;
   text-align: center;
   font-size: 24px;
+  color: @bg-darkblue;
 }
 
 .advantages-company__list {
   list-style: none;
+  background-image: url("/img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  display: flex;
+  flex-direction: column;
+  min-height: 753px;
+  padding: 0;
 }
+
 
 .advantages-company__item {
   text-align: center;
@@ -26,9 +38,59 @@
 .advantages-company__description {
   font-size: 14px;
   line-height: 24px;
-  color: #283645;
+  color: @bg-darkblue;
 }
 
 .advantages-company__background {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-company__offer {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 34px;
+  }
+
+  .advantages-company__list {
+    list-style: none;
+    background-image: url("/img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 4% 4%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .advantages-company__item {
+    width: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-company {
+    background-color: #f2f2f2;
+  }
+
+  .advantages-company__offer {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .advantages-company__list {
+    background-image: url("/img/iphone-screen-1-desktop@1x.png"), url("/img/iphone-screen-2-desktop@1x.png"), url("/img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0% 0%, 50% 0%, 100% 0%;
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .advantages-company__item {
+    width: auto;
+    margin-top: 315px;
+  }
 }

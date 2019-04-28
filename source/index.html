@@ -2,22 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Приложение Pink</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
   <header class="user-navigation">
     <ul class="user-navigation__list">
-      <li class="user-navigation__item"> <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink"> </li>
+      <li class="user-navigation__item"><a class="user-navigation__href" href="logo.html"><span class="visually-hidden">Логотип Pink</span></li>
       <li class="user-navigation__item"><a class="user-navigation__href" href="index.html">Главная</a></li>
       <li class="user-navigation__item"><a class="user-navigation__href" href="photo.html">Фотографии</a></li>
-      <li class="user-navigation__item"><a class="user-navigation__href" href="competition.html">Конкурс</a></li>
+      <li class="user-navigation__item"><a class="user-navigation__href" href="form.html">Конкурс</a></li>
       <li class="user-navigation__item"><a class="user-navigation__href" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
     </ul>
-    <img class="user-navigation_background" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фон">
-    <img class="user-navigation_background--hand" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука с айфоном">
+    <h2 class="user-navigation__headline">Взгляните на жизнь иначе!</h2>
   </header>
   <section class="download-application">
     <h2 class="visually-hidden">Установка приложения</h2>
@@ -31,7 +31,7 @@
   </section>
   <section class="advantages-company">
     <h2 class="visually-hidden">Преимущества компании</h2>
-    <h2 class="advantages-company__offer">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+    <h2 class="advantages-company__offer">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h2>
     <ul class="advantages-company__list">
       <li class="advantages-company__item">
         <h3 class="advantages-company__title">Поднимает настроение</h3>
@@ -46,13 +46,17 @@
         <p class="advantages-company__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </li>
     </ul>
-    <img class="advantages-company__background" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Логотип телефона">
+  </section>
+  <section class="effect-company">
+    <h2 class="effect-company__headline">Эффект на 24 часа!</h2>
+    <p class="effect-company__description">Британские ученые провели исследованияи доказали, что положительный эффектот использования приложения длится целые сутки!</p>
+    <a class="effect-company__more">Узнать больше об исследовании</a>
   </section>
   <section class="reviews-company">
     <h2 class="visually-hidden">Отзывы пользователей</h2>
     <ul class="reviews-company__list">
       <li class="reviews-company__item--active" >
-        <h3 class="reviews-company__user">Николай Петров</h3>
+        <h3 class="reviews-company__user">Николай Петров <span class="reviews-company__data">25 лет, водитель трамвая</span></h3>
         <p class="reviews-company__reviews">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </li>
       <li class="reviews-company__item">
@@ -92,17 +96,48 @@
       <li class="tariff-plan__item">Комментарии</li>
     </ul>
   </section>
-  <footer class="footer-index">
-    <section class="footer-index__contacts">
-      <h2 class="visually-hidden">Контакты компании</h2>
-      <p class="footer-index__description">Остались вопросы?Свяжитесь с нами!</p>
-      <p class="footer-index__feedback">Звоните: <a class="contacts-company__feedback item" href="#">+7 (812) 555-66-66</a></p>
-      <p class="footer-index__feedback">Пишите: <a class="contacts-company__feedback item" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <p class="footer-index__feedback">Приезжайте в гости: <span class="contacts-company__feedback item" href="#">ул. Большая Конюшенная, 19/8</span></p>
-    </section>
-    <div class="contact-map">
-      <a class="contact-map__google-map"href="https://goo.gl/maps/pJxZczZtuVA2"><img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8" height="158" width="300"></a>
-    </div>
+  <section class="footer-index__contacts">
+    <h2 class="visually-hidden">Контакты компании</h2>
+    <p class="footer-index__description">Остались вопросы?Свяжитесь с нами!</p>
+    <ul class="footer-index__list">
+      <li class="footer-index__feedback">Звоните:<br><a class="contacts-company__feedback--item" href="#">+7 (812) 555-66-66</a></li>
+      <li class="footer-index__feedback">Пишите:<br><a class="contacts-company__feedback--item" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+      <li class="footer-index__feedback">Приезжайте в гости:<br><span class="contacts-company__feedback--item" href="#">ул. Большая Конюшенная, 19/8</span></li>
+    </ul>
+  </section>
+  <div class="contact-map">
+      <a class="contact-map__google-href"href="https://goo.gl/maps/pJxZczZtuVA2"></a>
+  </div>
+  <footer class="contacts-footer">
+    <a class="contacts-footer__logo" href="index.html">
+      <img class="contacts-footer__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
+    </a>
+    <ul class="contacts-footer__list">
+      <li class="contacts-footer__item">
+        <a class="contacts-footer__social" href="#">
+          <img src="img/icon-twitter.svg" alt="Twitter" width="26" height="15">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li class="contacts-footer__item">
+        <a class="contacts-footer__social" href="#">
+          <img src="img/icon-facebook.svg" alt="Facebook" width="12" height="22">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="contacts-footer__item">
+        <a class="contacts-footer__social" href="#">
+          <img src="img/icon-youtube.svg" alt="Youtube" width="21" height="21">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <p class="contacts-footer__developed">Разработано-
+      <a class="developed" href="htmlacademy.ru">
+        <img src="img/logo-htmlacademy.svg" alt="Html-academy" width="27" height="34">
+        <span class="visually-hidden">htmlacademy.ru</span>
+      </a>
+    </p>
   </footer>
 </body>
 
